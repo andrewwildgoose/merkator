@@ -10,17 +10,17 @@ import java.util.List;
 @Document(collection = "tracks")
 public class Track {
     @Id
-    private final String id;
+    private final Long id;
     private final String name;
     private final List<Point> points;
 
-    public Track(String id, String name, List<Point> points) {
+    public Track(Long id, String name, List<Point> points) {
         this.id = id;
         this.name = name;
         this.points = points;
     }
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
